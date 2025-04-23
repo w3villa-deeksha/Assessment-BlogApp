@@ -1,0 +1,234 @@
+
+.postContainer {
+    width: 100%;
+    margin: 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background: linear-gradient(135deg, #fff6e5, #fffbf0);
+    border: 1px solid #ffe0b2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.postContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.postHeader {
+    display: flex;
+    align-items: baseline;
+    padding: 1.5rem 2rem 0.5rem;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: black;
+    border-bottom: 3px solid #ff9a6e;
+}
+
+.postHead {
+    font-size: 1.75rem;
+    padding: 0.5rem 0;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight: 700;
+}
+
+.menu-wrapper {
+    position: relative;
+}
+
+.menu-wrapper svg {
+    fill: black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-wrapper svg:hover {
+    transform: scale(1.2);
+}
+
+.dropdownContainer {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    min-width: 150px;
+    z-index: 10;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: translateY(-15px) scale(0.9); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.dropdownItem {
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: all 0.2s;
+}
+
+.dropdown-icon {
+    margin-right: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(3px);
+}
+
+.dropdownItem.first {
+    padding-top: 1.2rem;
+    border-top: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.dropdownItem.last {
+    padding-bottom: 1.2rem;
+    border-radius: 0 0 12px 12px;
+}
+
+.postAuthor {
+    padding: 0.8rem 2rem;
+    margin: 0;
+    font-weight: 600;
+    color: #ff7e5f;
+    font-size: 1rem;
+    background-color: #fff8ee;
+    border-bottom: 1px dashed #ffe0b2;
+    display: flex;
+    align-items: center;
+}
+
+.author-label {
+    color: #ff9a6e;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    background-color: #fff0dd;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.post-content-wrapper {
+    background-color: white;
+    padding: 1.5rem 0;
+    margin: 0;
+    border-bottom: 4px solid #43cea2;
+}
+
+.postBody {
+    min-width: calc(80vw - 300px);
+    max-width: 100%;
+    padding-inline: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.postTags {
+    display: flex;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+/* Custom Tag styling - add this to your Tag component or override here */
+:root {
+    --tag-colors: #FF9A8B, #FF6B6B, #4BC0C8, #C471ED, #12C2E9, #F5AF19, #FF61D2;
+}
+
+/* Tag styling assuming your Tag component accepts custom classes */
+.tag {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* If you can't modify the Tag component, this is just for reference */
+
+.postFooter {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.like-container:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.like-container svg {
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.like-count {
+    font-weight: 700;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Snackbar styling */
+.snackbar {
+    min-width: 280px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.snackbar.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}

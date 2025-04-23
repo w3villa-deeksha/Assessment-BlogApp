@@ -1,0 +1,44 @@
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formContainer {
+    margin-inline: calc(50vw - 16rem);
+    margin-block: 6rem;
+    width: 32rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    border: solid 1px #dedede;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .formContainer {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        border: none;
+    }
+}
+
+.formGroup {
+    display: grid;
+    margin-block: 2rem;
+    justify-items: left;
+}
+
+.a {
+    margin-inline: auto;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+.a:hover {
+    cursor: pointer;
+}

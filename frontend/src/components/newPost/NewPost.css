@@ -1,0 +1,36 @@
+.mpostContainer {
+    width: 100%;
+    margin: 0rem 2rem;
+    overflow: auto;
+}
+
+.mpostAuthor {
+    padding-inline: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.mpostHead {
+    font-size: xx-large;
+    padding-inline: 2rem;
+}
+
+.mpostBody {
+    min-width: calc(80vw - 300px);
+    max-width: 100%;
+    padding-inline: 2.5rem;
+    font-size: x-large;
+}
+
+.mpostTags {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.mpostFooter {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

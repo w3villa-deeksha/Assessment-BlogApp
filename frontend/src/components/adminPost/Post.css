@@ -1,0 +1,74 @@
+.adminPostContainer {
+    width: 90vw;
+    margin: 0rem 2rem;
+    overflow: none;
+}
+
+.dropdownContainer {
+    position: absolute;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.4rem;
+}
+
+.dropdownItem {
+    border-top: solid 1px #eee;
+    padding-inline: 1rem;
+    padding-bottom: 0.5rem;
+    font-family: monospace;
+    padding-top: 0.5rem;
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+}
+
+.dropdownItem.first {
+    padding-top: 1rem;
+    border-top: none;
+}
+
+.dropdownItem.last {
+    padding-bottom: 1rem;
+}
+
+.postAuthor {
+    padding-inline: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.postHeader {
+    display: flex;
+    align-items: baseline;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.postHead {
+    font-size: xx-large;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.postBody {
+    min-width: calc(80vw - 300px);
+    max-width: 100%;
+    padding-inline: 2.5rem;
+    font-size: x-large;
+}
+
+.postTags {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.postFooter {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

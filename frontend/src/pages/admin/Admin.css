@@ -1,0 +1,37 @@
+.userContainer {
+    font-size: large;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-inline: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: x-large;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.adminPosts {
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: solid 1px #eee;
+}
+
+.logoutButton {
+    background-color: #e14646;
+    border: none;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
